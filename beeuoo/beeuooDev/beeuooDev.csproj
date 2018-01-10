@@ -76,6 +76,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -106,11 +107,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="image\bg.jpg" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="imgCreate\combinImg.cs" />
+    <Compile Include="imgCreate\resizeImg.cs" />
+    <Compile Include="imgCreate\saveImg.cs" />
+    <Compile Include="imgCreate\wordImg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

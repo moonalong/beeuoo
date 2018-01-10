@@ -4,9 +4,9 @@ using System.Drawing;
 using System.Linq;
 using System.Web;
 
-namespace beeuooDev.imgCreate
+namespace beeuooDev
 {
-    public class wordImgCreate
+    public static class wordImg
     {
 
         /// <summary>
@@ -15,7 +15,7 @@ namespace beeuooDev.imgCreate
         /// <param name="text"></param>
         /// <param name="isBold"></param>
         /// <param name="fontSize"></param>
-        public Image CreateImage(string text, bool isBold, int fontSize)
+        public static Image CreateImage(string text, bool isBold, int fontSize)
         {
             int wid = 400;
             int high = 200;
@@ -23,7 +23,6 @@ namespace beeuooDev.imgCreate
             if (isBold)
             {
                 font = new Font("Arial", fontSize, FontStyle.Bold);
-
             }
             else
             {
@@ -51,6 +50,6 @@ namespace beeuooDev.imgCreate
             return image;
         }
 
-
     }
+
 }
